@@ -1,9 +1,7 @@
 function compareArrays(arr1, arr2) {
-    return arr1.toString() === arr2.toString();
-    // const compareArray = (a, b) => a.length === b.length && a.every((n, i) => n === b[i]);
-    // return compareArray; 
+    // return arr1.toString() === arr2.toString();
+    return (arr1.length === arr2.length) && (arr1.every((n, i) => n === arr2[i]));
     
-    // Но почему то этот вариант у меня не сработал. Что именно я не так написал ? 
 }
 
 function getUsersNamesInAgeRange(users, gender) {
